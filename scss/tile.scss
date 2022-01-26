@@ -1,0 +1,540 @@
+@import 'vars';
+
+.tile {
+	background-color: $light-blue;
+	border-radius: 10px;
+	padding: 24px;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+.ip__status,
+.auditbytypetax,
+.declaration {
+	&-title {
+		@include h1-mobile;
+		margin-bottom: 24px;
+		@media screen and (min-width: 768px) {
+			font-size: 36px;
+		}
+		@media screen and (min-width: 1024px) {
+			@include h1-135;
+			margin-bottom: 38px;
+			max-width: 749px;
+		}
+	}
+	&-tile {
+		text-align: center;
+		padding-top: 29px;
+		padding-bottom: 28px;
+		@include h4-mobile;
+		color: $secondary;
+		@media screen and (min-width: 1024px) {
+			max-width: 400px;
+			padding-top: 24px;
+			padding-bottom: 25px;
+			@include h13;
+			color: $primary;
+		}
+	}
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+.ip__open {
+	&-title {
+		@include h1-mobile;
+		margin-bottom: 32px;
+		@media screen and (min-width: 768px) {
+			font-size: 36px;
+		}
+		@media screen and (min-width: 1024px) {
+			@include h1-135;
+			margin-bottom: 38px;
+		}
+	}
+	&-tile {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@media screen and (min-width: 1024px) {
+			padding: 48px 40px 56px;
+		}
+		&_title {
+			@include h4-mobile;
+			font-weight: 600;
+			margin-bottom: 16px;
+			@media screen and (min-width: 1024px) {
+				@include h5;
+			}
+		}
+		&_text {
+			@include h15;
+			color: $secondary;
+			margin-bottom: 16px;
+			@media screen and (min-width: 1024px) {
+				margin-bottom: 40px;
+			}
+		}
+		&_link {
+			height: 69px;
+			background-color: $button-normal;
+			width: 100%;
+			border-radius: 10px;
+			@include h14;
+			color: $background;
+			@media screen and (min-width: 1024px) {
+				color: $primary;
+				width: auto;
+				padding-left: 40px;
+				padding-right: 40px;
+				border: 1px solid $stroke;
+				background-color: transparent;
+			}
+		}
+	}
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+.vzone,
+.taxplan,
+.needforaccounting,
+.featuresofaccounting,
+.needoftaxaudit,
+.jaraaccounting,
+.declorationtaxingeorgia,
+.ndsingeorgia {
+	&-title {
+		@include h1-mobile;
+		margin-bottom: 24px;
+		@media screen and (min-width: 768px) {
+			font-size: 36px;
+		}
+		@media screen and (min-width: 1024px) {
+			@include h1-135;
+			margin-bottom: 38px;
+			max-width: 749px;
+		}
+	}
+	&-tile {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		@media screen and (min-width: 1024px) {
+			padding: 36px 24px;
+		}
+		&_title {
+			@include h2-mobile;
+			margin-bottom: 16px;
+			@media screen and (min-width: 1024px) {
+				@include h5;
+			}
+		}
+		&_text {
+			@include h15;
+			color: $secondary;
+		}
+	}
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.taxplan {
+	&-title {
+		@media screen and (min-width: 1024px) {
+			max-width: 665px;
+		}
+	}
+	&-tile {
+		&_title {
+			@media screen and (min-width: 1024px) {
+				@include h7;
+			}
+		}
+	}
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+.listconsultation,
+.timedeclaration {
+	&__title {
+		@include h1-mobile;
+		margin-bottom: 24px;
+		@media screen and (min-width: 768px) {
+			font-size: 30px;
+		}
+	}
+	&-tile {
+		@media screen and (min-width: 1024px) {
+			padding: 0;
+			max-width: 365px;
+		}
+		&_link {
+			&-desktop {
+				display: none;
+				@media screen and (min-width: 1024px) {
+					display: flex;
+					align-items: center;
+					gap: 8px;
+					@include h14;
+					color: $button-normal;
+				}
+			}
+			&-mobile {
+				width: 100%;
+				height: 69px;
+				background-color: $button-normal;
+				margin-top: 32px;
+				border-radius: 10px;
+				color: $background;
+				@include h14;
+				@media screen and (min-width: 1024px) {
+					display: none;
+				}
+			}
+		}
+		&_title {
+			@include h2-mobile;
+			line-height: 125%;
+			margin-bottom: 16px;
+			@media screen and (min-width: 1024px) {
+				@include h7;
+				margin-bottom: 10px;
+			}
+		}
+		&_text {
+			@include h15;
+			color: $secondary;
+		}
+	}
+	&__wrapper {
+		@media screen and (min-width: 1024px) {
+			padding: 56px 70px 70px;
+			background-color: $light-blue;
+			border-radius: 10px;
+			display: flex;
+		}
+		&-left {
+			@media screen and (min-width: 1024px) {
+				margin-right: 45px;
+			}
+			@media screen and (min-width: 1440px) {
+				margin-right: 90px;
+			}
+		}
+		&-right {
+			.tile:not(:first-child) {
+				margin-top: 16px;
+				@media screen and (min-width: 1024px) {
+					margin-top: 28px;
+				}
+			}
+			@media screen and (min-width: 1024px) {
+				margin-left: 45px;
+				width: 50%;
+			}
+			@media screen and (min-width: 1440px) {
+				margin-left: 90px;
+			}
+		}
+	}
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.featuresofaccounting,
+.jaraaccounting,
+.timedeclaration,
+.declorationtaxingeorgia {
+	&__tile {
+		@media (min-width: 600px) {
+			&:nth-child(1) {
+				grid-column: 1 / span 2;
+				grid-row: 1;
+			}
+			&:nth-child(4) {
+				grid-column: 1 / span 2;
+				grid-row: 3;
+			}
+		}
+		@media screen and (min-width: 1200px) {
+			padding: 70px;
+		}
+		&:first-child {
+			@media screen and (min-width: 600px) {
+				display: flex;
+				gap: 16px;
+			}
+			img {
+				margin-bottom: -24px;
+				margin-top: 16px;
+				margin-left: auto;
+				margin-right: auto;
+				@media screen and (min-width: 600px) {
+					margin-top: 0;
+				}
+				@media screen and (min-width: 1200px) {
+					margin-bottom: -70px;
+					margin-top: -47px;
+				}
+			}
+			.featuresofaccounting__tile-inner {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				@media screen and (min-width: 600px) {
+					width: 50%;
+				}
+			}
+			.featuresofaccounting-tile_title,
+			.featuresofaccounting-tile_text {
+				max-width: 451px;
+			}
+		}
+		&:last-child {
+			overflow-x: hidden;
+			@media screen and (min-width: 600px) {
+				display: flex;
+				justify-content: space-between;
+				gap: 16px;
+			}
+			img {
+				padding-top: 24px;
+				min-width: 335px;
+				min-height: 160px;
+				@media screen and (min-width: 600px) {
+					margin-right: -110px;
+					padding-top: 0;
+				}
+			}
+			.featuresofaccounting__tile-inner {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				@media screen and (min-width: 600px) {
+					width: 50%;
+				}
+			}
+			.featuresofaccounting-tile_title,
+			.featuresofaccounting-tile_text {
+				max-width: 451px;
+			}
+		}
+	}
+}
+////////////////////////////////////////////////////////////////////////////////////////////////
+.correctionerror {
+	&-tile {
+		@media screen and (max-width: 768px) {
+			background-color: transparent;
+			padding: 0;
+		}
+		@media screen and (min-width: 1024px) {
+			padding: 56px 70px 70px;
+		}
+		&_title {
+			@include h1-mobile;
+			margin-bottom: 16px;
+			@media screen and (min-width: 768px) {
+				font-size: 36px;
+				margin-bottom: 20px;
+			}
+			@media screen and (min-width: 1024px) {
+				@include h1-125;
+			}
+		}
+		&_text {
+			@include h15;
+			color: $secondary;
+			p + p {
+				margin-top: 16px;
+			}
+		}
+		&_link {
+			width: 100%;
+			height: 69px;
+			background-color: $button-normal;
+			margin-top: 32px;
+			border-radius: 10px;
+			color: $background;
+			@include h14;
+			@media screen and (min-width: 768px) {
+				display: none;
+			}
+		}
+	}
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.jaraaccounting {
+	&__tile {
+		&:first-child {
+			padding: 0;
+			padding-top: 24px;
+			padding-bottom: 24px;
+			display: block;
+			.jaraaccounting__tile-inner {
+				padding-left: 24px;
+				padding-right: 24px;
+			}
+			img {
+				margin-bottom: 0px;
+				margin-top: 24px;
+				width: 100%;
+			}
+			@media screen and (min-width: 1024px) {
+				display: flex;
+				justify-content: space-between;
+				gap: 16px;
+				padding: 0;
+				.jaraaccounting__tile-inner {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-content: space-between;
+					max-width: 480px;
+				}
+				.wrapper__img {
+					width: 50%;
+					position: relative;
+					&::after {
+						position: absolute;
+						content: '';
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						background-image: linear-gradient(90deg, #f3f6f9 2%, rgba(243, 246, 249, 0) 10%);
+					}
+				}
+				img {
+					width: 100%;
+					margin-top: 0;
+					margin-right: 0;
+				}
+			}
+			@media screen and (min-width: 1200px) {
+				padding-left: 70px;
+				.jaraaccounting__tile-inner {
+					padding: 0;
+				}
+			}
+		}
+		&:last-child {
+			display: block;
+		}
+	}
+}
+/////////////////////////////////////////////////////////////////////////////////////////////
+.timedeclaration {
+	&__tile {
+		&:first-child {
+			background-color: transparent;
+			padding: 0;
+			@media screen and (min-width: 600px) {
+				grid-column: 1;
+			}
+			@media screen and (min-width: 1024px) {
+				grid-column: 1 / span 2;
+				grid-row: 1;
+			}
+		}
+		&:last-child {
+			display: block;
+		}
+	}
+	&-tile_link-desktop {
+		align-items: baseline;
+	}
+	&__inner.grid1_2 {
+		@media screen and (min-width: 600px) {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 16px;
+		}
+		@media screen and (min-width: 1024px) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 32px;
+			padding: 0;
+			background-color: transparent;
+			border-radius: 10px;
+		}
+	}
+	&__wrapper {
+		width: 100%;
+		@media screen and (min-width: 1024px) {
+			&-left {
+				width: 50%;
+			}
+			&-right {
+				width: 50%;
+				margin-left: 20px;
+			}
+		}
+		@media screen and (min-width: 1200px) {
+			&-right {
+				margin-left: 100px;
+			}
+		}
+		@media screen and (min-width: 1440px) {
+			&-right {
+				margin-left: 60px;
+			}
+		}
+	}
+}
+////////////////////////////////////////////////////////////////////////////////////////////\
+.declorationtaxingeorgia {
+	&__wrapper.grid2_1 {
+		@media (min-width: 600px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	&-tile {
+		&:nth-child(3) {
+			padding: 0;
+			padding-top: 24px;
+			.declorationtaxingeorgia-tile_title,
+			.declorationtaxingeorgia-tile_text {
+				p + p {
+					margin-top: 16px;
+				}
+				padding-left: 24px;
+				padding-right: 24px;
+			}
+			img {
+				width: 100%;
+			}
+			@media (min-width: 768px) {
+				grid-column: 1 / span 2;
+				grid-row: 2;
+			}
+			@media screen and (min-width: 1024px) {
+				display: flex;
+				flex-direction: row;
+				align-items: end;
+				justify-content: space-between;
+				row-gap: 16px;
+				.declorationtaxingeorgia-tile_inner {
+					width: 50%;
+				}
+				.declorationtaxingeorgia-tile_text {
+					padding-bottom: 24px;
+				}
+			}
+			@media screen and (min-width: 1115px) {
+				align-items: center;
+				padding-top: 0;
+			}
+		}
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+.ndsingeorgia {
+	&__wrapper.grid2col {
+		@media (min-width: 600px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	&-tile {
+		&_text {
+			p + p {
+				margin-top: 16px;
+			}
+		}
+	}
+}

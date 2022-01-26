@@ -1,0 +1,174 @@
+@import 'vars';
+
+
+.wrapper{
+  display: flex;
+  column-gap: 14px;
+  margin-bottom: 23px;
+}
+.item{
+  width: 110px;
+  height: 110px;
+  border-radius: 20px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item1{
+  border: 1px solid #979797;
+  background-color: $background;
+}
+.item2{
+  background-color: $primary;
+  color: #FCFDFF;
+}
+.item3{
+  background-color: $secondary;
+  color: #FCFDFF;
+}
+.item4{
+  background-color: $button-normal;
+}
+.item5{
+  background-color: $button-hover;
+}
+.item6{
+  background-color: $button-form;
+}
+.item7{
+  background-color: $light-blue;
+}
+.item8{
+  background-color: $header-1;
+}
+.item9{
+  background-color: $line;
+}
+.item10{
+  background-color: $google;
+}
+.item11{
+  background-color: $stroke;
+}
+.item12{
+  background-color: $body;
+}
+.item13{
+  background-color: $error;
+}
+.item14{
+  background-color: $done;
+}
+.item15{
+  background-color: $star;
+}
+.item16{
+  background-color: $table-1;
+}
+.item17{
+  background-color: $table-2;
+}
+.item18{
+  background-color: $table-3;
+}
+.item19{
+  background-color: $row-table;
+}
+.item20{
+  background-color: $tab;
+}
+.item21{
+  background-color: $play-normal;
+}
+.item22{
+  background-color: $play-hover;
+}
+
+.t_wrapper{
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 10px;
+  &1{
+    @include h1-125;
+  }
+  &2{
+    @include h1-135;
+  }
+  &3{
+    @include h1-130;
+  }
+  &4{
+    @include h2
+  }
+  &5{
+    @include h3
+  }
+  &6{
+    @include h4
+  }
+  &7{
+    @include h5
+  }
+  &8{
+    @include h6
+  }
+  &9{
+    @include h7
+  }
+  &10{
+    @include h8
+  }
+  &11{
+    @include h9
+  }
+  &12{
+    @include h10
+  }
+  &13{
+    @include h11
+  }
+  &14{
+    @include h12
+  }
+  &15{
+    @include h13
+  }
+  &16{
+    @include h14
+  }
+  &17{
+    @include h15
+  }
+  &18{
+    @include h16
+  }
+  &19{
+    @include h17
+  }
+  &20{
+    @include h18
+  }
+  &21{
+    @include h19
+  }
+  &22{
+    @include h1-mobile
+  }
+  &23{
+    @include h2-mobile
+  }
+  &24{
+    @include h3-mobile
+  }
+  &25{
+    @include h4-mobile
+  }
+  &26{
+    @include h5-mobile
+  }
+}
+.text{
+  @include h1-125;
+  margin-bottom: 100px;
+}

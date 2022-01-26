@@ -1,0 +1,153 @@
+$background:  #FCFDFF;
+$primary: #0B2128;
+$secondary: #485B63;
+$button-normal: #54B7E3;
+$button-hover: #0E8EC7;
+$button-form: #6FCCF5;
+$light-blue: #F3F6F9;
+$header-1: #F2F5F5;
+$line: #DDDDDD;
+$google: #B0BEC5;
+$stroke: #CCD1D4;
+$body: #A2ACB1;
+$error: #D13939;
+$done: #39D148;
+$star: #FDD314;
+$table-1: #7F9097;;
+$table-2: #596F77;
+$table-3: #445C65;
+$row-table: #DDE8ED;
+$tab: #F8F8F8;
+$play-normal: rgba(84, 183, 227, 0.7);
+$play-hover: rgba(84, 183, 227, 0.95);
+
+@mixin h1-125 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+}
+@mixin h1-135 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 135%;
+}
+@mixin h1-130 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+}
+@mixin h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 130%;
+}
+@mixin h3 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+}
+@mixin h4 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+}
+@mixin h5 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+}
+@mixin h6 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 145%;
+}
+@mixin h7 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+}
+@mixin h8 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+}
+@mixin h9 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+}
+@mixin h10 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 145%;
+}
+@mixin h11 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 145%;
+}
+@mixin h12 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 145%;
+}
+@mixin h13 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 145%;
+}
+@mixin h14 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+}
+@mixin h15 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+}
+@mixin h16 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 145%;
+}
+@mixin h17 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+}
+@mixin h18 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 145%;
+}
+@mixin h19 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 145%;
+}
+@mixin h1-mobile {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+}
+@mixin h2-mobile {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+}
+@mixin h3-mobile {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 145%;
+}
+@mixin h4-mobile {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+@mixin h5-mobile {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}

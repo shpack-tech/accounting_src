@@ -1,0 +1,138 @@
+.main_article-container {
+    border-top: 2px solid red;
+    background-color: #F3F6F9;
+    padding: 50px 20px 14px 20px;
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+}
+
+.article_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.views {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #A2ACB1;
+    margin-bottom: 16px;
+    width: 170px;
+}
+
+.views_number {
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.article_header {
+    margin-bottom: 16px;
+}
+
+.article_autor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 167px;
+    margin-bottom: 24px;
+}
+
+.article_autor div {
+    color: #A2ACB1;
+}
+
+.article_button {
+    display: flex;
+    width: 166px;
+    height: 69px;
+    align-items: center;
+    justify-content: center;
+}
+
+.article_autor-wide {
+    display: none;
+}
+
+@media(min-width: 600px) {
+    .views {
+        margin-bottom: 24px;
+        margin-left: 10px;
+        width: 360px;
+    }
+    .article_autor-wide {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+        width: 180px;
+    }
+    .article_autor {
+        display: none;
+    }
+}
+
+@media(min-width: 714px) {
+    .article_image {
+        max-width: 80%;
+    }
+}
+
+@media(min-width: 980px) {
+    .article_image {
+        display: none;
+    }
+    .main_article-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        justify-items: center;
+    }
+    .main_article-container {
+        padding: 50px 20px 0 20px;
+    }
+    .article_left {
+        max-width: 500px;
+    }
+    .article_right {
+        display: flex;
+        justify-self: end;
+        max-width: 740px;
+    }
+    .main_article-container {
+        padding-right: 0;
+    }
+}
+
+@media(max-width: 979px) {
+    .article_right {
+        display: none;
+    }
+}
+
+@media(min-width:1200px) {
+    .article_autor {
+        grid-column-start: 1;
+    }
+    .views {
+        grid-column-start: 1;
+        margin-bottom: 24px;
+    }
+    .article_header {
+        max-width: 500px;
+    }
+    .article_image {
+        justify-content: end;
+    }
+}
+
+@media(max-width:600px) {
+    .article_header {
+        font-size: 24px;
+    }
+}
