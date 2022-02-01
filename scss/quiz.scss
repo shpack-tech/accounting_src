@@ -28,23 +28,139 @@
 							border-radius: 50%;
 							justify-content: center;
 						}
+
 						&-active {
 							min-height: 40px;
 							min-width: 40px;
-							background: #54b7e3;
-							div {
-								background: #54b7e3;
+							background: transparent;
 
-								box-shadow: 0 0 0px 4.6px #f3f6f9;
-								position: relative;
-								&::after {
-									content: '';
-									width: 5px;
-									height: 2px;
-									display: block;
-									border-bottom: 2px solid #54b7e3;
-									position: absolute;
-									right: -5px;
+							&:first-child {
+								div {
+									background: #54b7e3;
+
+									position: relative;
+									&::after {
+										content: '';
+										width: 6px;
+										height: 2px;
+										display: block;
+										border-bottom: 2px solid #54b7e3;
+										position: absolute;
+										right: -6px;
+									}
+								}
+							}
+							&:not(:first-child) {
+								div {
+									background: #54b7e3;
+
+									position: relative;
+									&::after {
+										content: '';
+										width: 6px;
+										height: 2px;
+										display: block;
+										border-bottom: 2px solid #54b7e3;
+										position: absolute;
+										right: -6px;
+									}
+									&::before {
+										content: '';
+										width: 6px;
+										height: 2px;
+										display: block;
+										border-bottom: 2px solid #54b7e3;
+										position: absolute;
+										left: -6px;
+									}
+								}
+							}
+							&:last-child {
+								div {
+									background: #54b7e3;
+
+									position: relative;
+									&::after {
+										display: none;
+									}
+									&::before {
+										content: '';
+										width: 6px;
+										height: 2px;
+										display: block;
+										border-bottom: 2px solid #54b7e3;
+										position: absolute;
+										left: -6px;
+									}
+								}
+							}
+						}
+						&-active.current {
+							min-height: 50px;
+							min-width: 50px;
+							background: #54b7e3;
+
+							&:first-child {
+								div {
+									background: #54b7e3;
+
+									box-shadow: 0 0 0px 4.6px #f3f6f9;
+									position: relative;
+									&::after {
+										content: '';
+										width: 5px;
+										height: 2px;
+										display: block;
+										border-bottom: 2px solid #54b7e3;
+										position: absolute;
+										right: -5px;
+									}
+								}
+							}
+							&:not(:first-child) {
+								div {
+									background: #54b7e3;
+
+									box-shadow: 0 0 0px 4.6px #f3f6f9;
+									position: relative;
+									&::after {
+										content: '';
+										width: 5px;
+										height: 2px;
+										display: block;
+										border-bottom: 2px solid #54b7e3;
+										position: absolute;
+										right: -5px;
+									}
+									&::before {
+										content: '';
+										width: 5px;
+										height: 2px;
+										display: block;
+										border-bottom: 2px solid #54b7e3;
+										position: absolute;
+										left: -5px;
+									}
+								}
+							}
+							&:last-child {
+								div {
+									background: #54b7e3;
+
+									box-shadow: 0 0 0px 4.6px #f3f6f9;
+									position: relative;
+									&::after {
+										display: none;
+									}
+									&::before {
+										content: '';
+										width: 5px;
+										height: 2px;
+										display: block;
+										border-bottom: 2px solid #54b7e3;
+										position: absolute;
+										left: -5px;
+									}
 								}
 							}
 						}
@@ -173,6 +289,10 @@
 									position: relative;
 									top: -5px;
 								}
+							}
+							.prize_container.available {
+								box-shadow: -4px 4px 8px rgba(46, 206, 255, 0.507), 3px 2px 8px rgba(70, 208, 250, 0.452);
+								cursor: pointer;
 							}
 							div + div {
 								margin-top: 16px;
@@ -417,6 +537,7 @@
 	}
 	.next_step_quiz {
 		color: #f3f6fd;
+		margin-bottom: 10px;
 		background: #54b7e3;
 		img {
 			margin-left: 10px;
